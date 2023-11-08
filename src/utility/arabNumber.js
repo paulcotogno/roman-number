@@ -1,5 +1,5 @@
 export const convertToNumber = (roman) => {
-    if(!/^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/.test(roman)) return 'Not a valid roman number'
+    if(!/^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/.test(roman)) return { error: true, message: 'Not a valid roman number'}
     
     const map = {
       M: 1000,
@@ -24,5 +24,5 @@ export const convertToNumber = (roman) => {
         result += first;
       }
     }
-    return result;
+    return {data: result};
   };

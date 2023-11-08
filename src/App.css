@@ -2,11 +2,26 @@
   text-align: center;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #6F8ABF;
   gap: 60px;
+}
+
+.App_background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  z-index: -1;
+  background-color: #6F8ABF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.App_background p {
+  font-size: 70vw;
+  color: #7e98c9;
 }
 
 .Container {
@@ -42,9 +57,24 @@
 }
 
 .Header_btn:hover {
-  background-position: 0 50%;
+  background-position: 0 40%;
 }
 
 .Header_btn.active {
-  background-position: 0 100%;
+  background-position: 0 60%;
+}
+
+.result, .error {
+  font-size: x-large;
+  min-width: 200px;
+}
+
+.result {
+  border-bottom: 1px white solid;
+  color: white;
+}
+
+.error {
+  border-bottom: 1px red solid;
+  color: red;
 }
