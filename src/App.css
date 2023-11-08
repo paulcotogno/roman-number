@@ -2,9 +2,11 @@
   text-align: center;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #6F8ABF;
+  gap: 60px;
 }
 
 .Container {
@@ -13,4 +15,36 @@
   justify-content: center;
   align-items: center;
   color: #C9DBF2;
+}
+
+.Container input {
+  padding: 7px 20px;
+  border: none;
+  border-radius: 100px;
+}
+
+.Header {
+  display: flex;
+  gap: 30px;
+}
+
+.Header_btn {
+  display: block;
+  border: none;
+  padding: 10px 30px;
+  border-bottom: 1px white solid;
+  cursor: pointer;
+  background: linear-gradient(0deg, rgba(255,255,255,0.5), transparent 50%, transparent);
+  background-size: 100% 300%;
+  will-change: background-position;
+  transition: background-position 0.5s ease;
+  color: white;
+}
+
+.Header_btn:hover {
+  background-position: 0 50%;
+}
+
+.Header_btn.active {
+  background-position: 0 100%;
 }
