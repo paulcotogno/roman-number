@@ -1,10 +1,12 @@
 export const convertToRoman = (number) => {
   if (number === '') return { data: '' }
 
+  if(number === 0) return { data: 'O' }
+
   if (isNaN(number)) return { error: true, message: 'Not a number'}
   if(number > 10000) return { error: true, message: 'Number too high [Valid Number "1 - 10000"]'}
   if(number < 1) return { error: true, message: 'Number too low [Valid Number "1 - 10000"]'}
-  
+
   const romanNumbers = {
     M: 1000,
     CM: 900,
