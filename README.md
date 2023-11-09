@@ -6,6 +6,9 @@
 - **GitHub :** Utilisé pour le contrôle de version et la collaboration entre les membres de l'équipe.
 - **CI/CD :** Utilisation de GitHub Actions avec un environnement Node
 
+## Gestion des issues et distribution des fonctionnalité
+- **Utilisation de linear :** Lien pour se connecter: https://linear.app/kata-roman-numeral/join/0952c74a9181926babcc462fb4283fcc?s=1
+
 ## Utilisation du projet
 ```bash
 npm run start
